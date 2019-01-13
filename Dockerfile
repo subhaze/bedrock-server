@@ -22,7 +22,7 @@ COPY start.sh /bedrock-server/start.sh
 
 EXPOSE 19132/udp
 
-VOLUME /bedrock-server/worlds /bedrock-server/config
+VOLUME /bedrock-server/worlds /bedrock-server/config /tmp/behavior_packs /tmp/resource_packs
 
 WORKDIR /bedrock-server
 ENV LD_LIBRARY_PATH=.
