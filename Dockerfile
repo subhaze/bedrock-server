@@ -18,7 +18,7 @@ RUN mkdir /bedrock-server/config && \
     ln -s /bedrock-server/config/permissions.json /bedrock-server/permissions.json && \
     ln -s /bedrock-server/config/whitelist.json /bedrock-server/whitelist.json
 
-COPY start.sh /bedrock-server/start.sh
+COPY ./start.sh /bedrock-server
 
 EXPOSE 19132/udp
 
